@@ -48,7 +48,7 @@ namespace ConsoleApp1
                         Random dies4 = new Random();
                         int Number4 = dies4.Next(1, 7);
 
-                        Console.WriteLine("          your rolled number is :" + Number1 + " , " + Number4);
+                        Console.WriteLine("                   Your rolled number is :" + Number1 + " , " + Number4);
 
                         Console.ReadKey();
                         rollnum = Number1;
@@ -62,17 +62,15 @@ namespace ConsoleApp1
 
                     //x++;
 
-                    Console.Write("           DO you want to continue ? Y/N   ");
+                    Console.Write("     DO you want to continue ? Y/N   ");
                     Answer = Console.ReadLine();
                     Answer = Answer.ToUpper();
 
                     if (Answer == "N")
                     {
 
-                        
-                          
-                        Console.WriteLine("sum first dies: " + sum + "  " + "average: " + averagesum + " ");
-                        Console.Write("sum Second dies :" + sum1 + "average 2: " + averagesum1+"   ");
+                        Console.WriteLine("sum first dies: " + sum + "  " + " average: " + averagesum + " ");
+                        Console.Write("sum Second dies:" + sum1 + " average 2: " + averagesum1+"   ");
                         Console.ReadKey();
                         endroll = true;
                     }
