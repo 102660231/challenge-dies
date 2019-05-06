@@ -48,27 +48,28 @@ namespace ConsoleApp1
                         Random dies4 = new Random();
                         int Number4 = dies4.Next(1, 7);
 
-                        Console.WriteLine("          your rolled number is :" + Number1 + " + " + Number4);
+                        Console.WriteLine("          your rolled number is :" + Number1 + " , " + Number4);
 
                         Console.ReadKey();
                         rollnum = Number1;
                         rollnum3 = Number4;
                     }
                     counter++;
+                    sum = sum + rollnum;
+                    sum1 = sum1 + rollnum3;
+                    averagesum = (sum / counter);
+                    averagesum1 = (sum1 / counter);
 
                     //x++;
 
-                    Console.Write("      DO you want to continue ? Y/N   ");
+                    Console.Write("           DO you want to continue ? Y/N   ");
                     Answer = Console.ReadLine();
                     Answer = Answer.ToUpper();
 
                     if (Answer == "N")
                     {
 
-                        sum = sum + rollnum;
-                        sum1 = sum1 + rollnum3;
-                        averagesum = (sum / counter);
-                        averagesum1 = (sum1 / counter);
+                        
                           
                         Console.WriteLine("sum first dies: " + sum + "  " + "average: " + averagesum + " ");
                         Console.Write("sum Second dies :" + sum1 + "average 2: " + averagesum1+"   ");
